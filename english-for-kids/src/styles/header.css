@@ -1,0 +1,144 @@
+.header{
+  position: relative;
+  height: 100px;
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+}
+.returnHomeIcon{
+  cursor: pointer;
+  position: absolute;
+  display: flex;  
+  left: 40%;
+  top:30px
+}
+.textHomeIcon{
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #b5d1fb;
+cursor: pointer;
+}
+.onoffswitch {
+  position: relative;  
+  margin-left: auto;
+  margin-right: 30px;
+   width: 120px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #f7c8de; border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; 
+  float: left; 
+  width: 50%; 
+  height: 30px; 
+  padding: 0; 
+  line-height: 30px;
+  font-size: 14px; color: #f7c8de; 
+  font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "train";
+  padding-left: 10px;
+  background-color: rgb(179, 233, 179); 
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.onoffswitch-inner:after {
+  content: "play";
+  padding-right: 17px;
+  background-color: rgb(245, 229, 88); 
+  color: #FFFFFF;
+  text-align: right;
+  text-transform: uppercase;
+}
+.onoffswitch-switch {
+  display: block; width: 46px; margin: 2px;
+  background:#f7c8de;
+  position: absolute; top: 0; bottom: 0;
+  right: 66px;
+  border: 2px solid#f7c8de;
+   border-radius: 20px;
+  transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}
+.burger {
+position: absolute;
+left: 40px;
+top: 30px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;  
+}
+.burger_navigation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100vh;
+  background-color:#f7c8de; 
+}
+.left_menu{
+  position:fixed;
+  left: -275px;
+  top: 0;
+  width: 275px;
+  height: 100vh;
+  background-color: #f7c8de;;
+}
+.navigation{
+  display: grid;
+  grid-gap: 20px;
+  list-style-type: none;  
+}
+.navLeftMenu{
+  margin: 100px 20px;
+}
+.textLinkMenu{
+  font-size: 23px;
+  line-height: 18px;  
+  font-family: "Lato", Verdana, serif;
+  font-weight: 900;
+  text-decoration: none;
+  color: #8db9fa;
+  margin-left: 10px;
+}
+.textLinkMenu:hover{
+  color: #FFFFFF;
+}
+@media screen and (max-width: 1019px){
+  .onoffswitch{
+    margin-right: 20px;
+  }  
+} 
+@media screen and (max-width: 767px){
+  .returnHomeIcon{
+    left: 60%;
+    top:30px
+  }
+  .textHomeIcon{display: none;}
+}
+  @media screen and (max-width: 570px){
+    .returnHomeIcon{
+      left: 80%;
+      top:68px
+    }
+  .onoffswitch{
+    margin-right: 0;
+} 
+}

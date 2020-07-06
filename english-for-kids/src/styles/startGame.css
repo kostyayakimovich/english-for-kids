@@ -1,0 +1,84 @@
+.startGame{
+  display: none;
+  margin: 30px;
+ position: relative;
+ justify-content: space-between; 
+  border-bottom: 5px solid #f7c8de;
+}
+.buttonStartGame{
+  margin-bottom: 10px;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f7c8de;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;  
+  text-decoration: none;
+  text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  background: linear-gradient(#f7c8de, #fabbd8) #f39cc5;
+  user-select: none;
+  outline: none;  
+  box-shadow:
+  0 1px rgba(255,255,255,.2) inset,
+  0 3px 5px rgba(0,1,6,.5),
+  0 0 1px 1px rgba(0,1,6,.2);
+ transition: .2s ease-in-out;
+}
+.buttonStartGame:hover{
+  background: linear-gradient(rgb(150, 150, 175), rgb(107, 115, 153)) rgb(53, 53, 196);
+}
+.score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #f7c8de ;
+  margin:0 0 10px 20px;
+  border-radius: 10px;
+}
+.textScore{
+  color: #b5d1fb;
+  font-size: 18px;
+  line-height: 18px;  
+  font-family: "Lato", Verdana, serif;
+  font-weight: 900;
+}
+.starArea{
+  width: 595px;
+  height: 40px;
+  border: 1px solid #f7c8de ;
+  margin:0 0 10px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.symbolStarArea{
+  margin-top: 5px;
+}
+.gameOver{
+  margin: 0 auto;
+}
+@media screen and (max-width: 1019px){
+.startGame{
+ flex-direction: column;
+}
+.buttonStartGame{
+  margin:0 0 10px 0;
+}
+.score{
+  margin:0 0 10px 0;
+}
+.starArea{
+  width: 100%;
+  margin:0 0 10px 0;
+}
+}
+@media screen and (max-width: 1019px){
+  .gameOver{
+    width: 280px;
+    height: 280px;
+  }
+}

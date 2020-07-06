@@ -1,0 +1,24 @@
+@import url("header.css");
+@import url("field.css");
+@import url("startGame.css");
+@import url("statistic.css");
+*{
+  margin: 0;
+  padding: 0;  
+}
+body{
+  background-color: #faf4f4;
+  box-shadow: 0 0 4em 4em   rgb(242, 250, 242)  inset;
+}
+.wrap{ 
+  width: 1020px;  
+margin: 0 auto;
+font-size: 12px;
+line-height: 22px;
+font-family: "LatoRegular", Verdana, serif;
+}
+@media screen and (max-width: 1019px){
+.wrap{
+  width: 100%;
+}
+} 
